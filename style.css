@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.5px;
+}
+html{
+    height: 100vh;
+}
+#check{
+    display: none;
+}
+.main_box{
+    height:100vh;
+    width:100%;
+    background-image: url("photo.jpg");
+    background-size: cover;
+}
+.btn_one{
+    font-size: 30px;
+    padding:10px;
+    display: inline;
+    position: absolute;
+}
+.sidebar_menu .btn_two i{
+    position:absolute;
+    left:265px;
+    top:10px;
+    padding: 10px;
+    cursor:pointer;
+}
+.sidebar_menu{
+    position: fixed;
+    background-color:rgb(255,255,255,0.1);
+    width: 300px;
+    height: 100vh;
+    box-shadow: 0 0 4px white;
+    left:-305px;
+}
+.sidebar_menu .logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+    position :absolute;
+    top:15px;
+    left: 15px;
+}
+.sidebar_menu .menu{
+    position:absolute;
+    top:150px;
+    color: white;
+    line-height: 50px;
+}
+.sidebar_menu .menu li{
+    width:300px;
+    
+}
+.sidebar_menu .menu i{
+    padding-left: 10px;
+}
+.sidebar_menu .menu ul li a{
+
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    position:absolute;
+    left: 40px;
+}
+.sidebar_menu .social_media{
+    position:absolute;
+    bottom: 10px;
+    left: 65px;
+}
+.sidebar_menu .social_media a i{
+    padding: 0 10px;
+    color: white;
+    opacity: 0.5;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px white;
+    font-size: 21px;
+    
+}
+.sidebar_menu .menu li:hover a{
+    font-size: 21px;
+    font-weight: 700 ;
+}
+.sidebar_menu .social_media a:hover{
+   font-size: 25px;
+   transition:all 0.1s linear ;
+}
+.btn_two:hover{
+    font-size: 25px;;
+}
+#check:checked ~ .sidebar_menu{
+   left:0;
+   transition:all 0.3s linear;
+}
+#check:checked~ .btn_one{
+    display: none;
+    transition: ease-out 0.3s linear 0s;
+}
+#check:checked ~ #title1 {
+    display: none;
+
+}
+.btn_one i:hover{
+    font-size: 40px;
+}
+#title1{
+    width: 30%;
+    height: 30%;
+    display:inline;
+    position:absolute;
+    left:35%;
+    top:35%;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size:5vh;
+    text-align: center;
+    align-content: center;
+    text-shadow: 0 0 4px black;
+    background-color: rgb(255,255,255,0.1);
+}
+#temp{
+    display:inline;
+    position:absolute;
+    left:35%;
+    top:35%;
+    width:30%;
+    height:30%;
+    font-size: 100%;
+    font-weight: 700;
+    text-align: center;
+    align-content: center;
+}
