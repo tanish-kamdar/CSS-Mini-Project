@@ -133,6 +133,7 @@ html{
     top:35%;
     width:30%;
     height:30%;
+    color: white;
     font-size: 100%;
     font-weight: 700;
     text-align: center;
@@ -142,4 +143,16 @@ html{
     #title1{
         font-size: 30px;
     }
+}
+.back_btn{
+    background-color: rgb(255,255,255,0.1);
+    box-shadow: 0 0 2px white;
+    border: none;
+    padding: 5px 10px;
+    margin:10px;
+    color:white;
+}
+.back_btn:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 4px white;
 }
