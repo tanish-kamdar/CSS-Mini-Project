@@ -111,20 +111,20 @@ html{
     font-size: 40px;
 }
 #title1{
-    width: 30%;
-    height: 30%;
+   
     display:inline;
     position:absolute;
-    left:35%;
-    top:35%;
+    left:30%;
+    top:35vh;
     color: white;
     text-decoration: none;
     font-weight: 700;
-    font-size:5vh;
+    font-size:50px;
     text-align: center;
     align-content: center;
     text-shadow: 0 0 4px black;
     background-color: rgb(255,255,255,0.1);
+    justify-content: center;
 }
 #temp{
     display:inline;
@@ -137,4 +137,9 @@ html{
     font-weight: 700;
     text-align: center;
     align-content: center;
+}
+@media (max-width: 450px){
+    #title1{
+        font-size: 30px;
+    }
 }
