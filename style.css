@@ -116,8 +116,16 @@ html{
     transition: ease-out 0.3s linear 0s;
 }
 #check:checked ~ #title1 {
-    display: none;
-
+    opacity: 0;
+    animation: title_disappears 0.3s ease-out 0s ;
+}
+@keyframes title_disappears{
+    from{
+        opacity: 100;
+    }
+    to{
+        opacity: 0;
+    }
 }
 .btn_one i:hover{
     font-size: 60px;
