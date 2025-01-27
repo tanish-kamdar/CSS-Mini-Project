@@ -15,15 +15,27 @@ html{
 .main_box{
     height:100vh;
     width:100%;
+    
     background-image: url("photo.jpg");
     background-size: cover;
 }
 .btn_one{
-    font-size: 30px;
-    padding:10px;
+    font-size: 50px;
+    padding:20px;
+    font-weight: 900;
     display: inline;
     position: absolute;
+    animation: btn_one_blinking 0.3s alternate 0s infinite;
 }
+@keyframes btn_one_blinking{
+    from{
+        
+    }
+    to{
+        font-size: 40px;
+    }
+}
+
 .sidebar_menu .btn_two i{
     position:absolute;
     left:265px;
@@ -108,7 +120,7 @@ html{
 
 }
 .btn_one i:hover{
-    font-size: 40px;
+    font-size: 60px;
 }
 #title1{
    
